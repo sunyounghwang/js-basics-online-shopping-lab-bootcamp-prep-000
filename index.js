@@ -22,7 +22,7 @@ function viewCart() {
   }
   
   if (l === 1) {
-  return `In your cart, you have ${array[i]} at $${price}.}`;
+  return `In your cart, you have ${array[0]} at $${price}.}`;
   }
   
   if (l === 2) {
