@@ -22,9 +22,8 @@ function viewCart() {
     return 'Your shopping cart is empty.';
   }
   
-  // building sentence fragments using names & prices
   var sentPieces = [];
-  for (var i = 0; i < l; i++) {
+  for (let i = 0; i < l; i++) {
     if (l > 1 && i === l - 1) {
       console.log(l)
       sentPieces.push(`and ${cart[i].itemName} at $${cart[i].itemPrice}.`);
