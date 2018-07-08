@@ -25,6 +25,10 @@ function viewCart() {
   return `In your cart, you have ${array[i]} at $${price}.}`;
   }
   
+  if (l === 2) {
+  return `In your cart, you have ${array[i]} at $${price}, and .}`;
+  }
+  
   for (i = 0; i < l; i++) {
     
   }
