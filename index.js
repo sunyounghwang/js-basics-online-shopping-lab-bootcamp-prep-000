@@ -22,16 +22,17 @@ function viewCart() {
     return 'Your shopping cart is empty.';
   }
   
-  if (l === 1) {
+  /* if (l === 1) {
   return `In your cart, you have ${} at $${}.}`;
   }
   
   if (l === 2) {
   return `In your cart, you have ${} at $${}, and ${} at $${}.}`;
-  }
+  } */
   
+  itemInfo = [];
   for (i = 0; i < l; i++) {
-    
+    itemInfo.push(itemInfo.slice(i, i++))
   }
 }
 
