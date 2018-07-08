@@ -32,7 +32,6 @@ function viewCart() {
       sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
     }
   
-  // building final sentence
   if (l === 1) {
     return `In your cart, you have ${sentPieces}.`;
   } else {
