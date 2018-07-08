@@ -20,6 +20,7 @@ function viewCart() {
   if (l === 0) {
     return 'Your shopping cart is empty.';
   }
+  
   for (i = 0, l = cart.length; i < l; i++) {
     
   }
