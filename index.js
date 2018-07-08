@@ -33,7 +33,7 @@ function viewCart() {
   var messageStart = "In your cart, you have ";
   var messageItems = [];
   for (i = 0; i < l; i++) {
-    messageItems.push(`${cart[i].itemName} at $${cart[i]itemPrice}`);
+    messageItems.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
   }
 }
 
