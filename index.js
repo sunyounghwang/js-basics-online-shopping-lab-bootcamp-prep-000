@@ -32,9 +32,7 @@ function viewCart() {
   
   if (l === 1) {
     return `In your cart, you have ${sentPieces[0]}.}`;
-  }
-
-  if (l === 2) {
+  } else if (l === 2) {
     return `In your cart, you have ${sentPieces[0]}, and ${sentPieces[1]}.}`;
   }
   
