@@ -37,7 +37,6 @@ function viewCart() {
   } else {
     return sentStart + sentPieces.join(', ');
     }
-  
 }
 
 function total() {
