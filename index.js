@@ -31,7 +31,6 @@ function viewCart() {
     } else {
       console.log(i)
       sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
-      i++
     }
   
   // building final sentence
