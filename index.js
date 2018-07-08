@@ -39,7 +39,7 @@ function viewCart() {
   var sentStart = "In your cart, you have ";
   
   if (l === 1) {
-  return `In your cart, you have ${sentFragments} at $${}.}`;
+  return `In your cart, you have ${sentFragments[0]}.}`;
   }
   
   
