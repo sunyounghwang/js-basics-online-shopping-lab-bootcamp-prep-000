@@ -30,9 +30,10 @@ function viewCart() {
   return `In your cart, you have ${} at $${}, and ${} at $${}.}`;
   } */
   
+  var messageStart = "In your cart, you have ";
+  var messageItems = [];
   for (i = 0; i < l; i++) {
-    var messageStart = "In your cart, you have ";
-    var newMessage = `${cart[i].itemName} at $${cart[i]itemPrice}`;
+    messageItems.push(`${cart[i].itemName} at $${cart[i]itemPrice}`);
   }
 }
 
