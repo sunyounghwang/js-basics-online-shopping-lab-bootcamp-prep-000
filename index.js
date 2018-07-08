@@ -30,13 +30,18 @@ function viewCart() {
   return `In your cart, you have ${} at $${}, and ${} at $${}.}`;
   } */
   
-  // building sentence pieces using itemName and itemPrice
-  var messageItems = [];
+  // building sentence fragments w. itemName & itemPrice
+  var sentFragments = [];
   for (i = 0; i < l; i++) {
-    messageItems.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
+    sentFragments.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
   }
   
-  var messageStart = "In your cart, you have ";
+  var sentStart = "In your cart, you have ";
+  
+  if (l === 1) {
+  return `In your cart, you have ${sentFragments} at $${}.}`;
+  }
+  
   
 }
 
