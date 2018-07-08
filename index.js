@@ -28,15 +28,14 @@ function viewCart() {
     sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
   }
   
-  var sentStart = "In your cart, you have ";
+  var sentStart = 'In your cart, you have ';
   
   if (l === 1) {
     return `In your cart, you have ${sentPieces[0]}.}`;
   } else if (l === 2) {
     return `In your cart, you have ${sentPieces[0]}, and ${sentPieces[1]}.}`;
   } else {
-    for (i = 0; i < l; i++) {
-      var sentEnd = 
+    return sentStart + sentPieces.join(', ');
     }
   }
   
