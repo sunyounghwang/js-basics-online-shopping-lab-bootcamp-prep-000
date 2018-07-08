@@ -35,8 +35,6 @@ function viewCart() {
   
   if (l === 1) {
     return `In your cart, you have ${sentPieces[0]}.}`;
-  } else if (l === 2) {
-    return `In your cart, you have ${sentPieces[0]}, and ${sentPieces[1]}.}`;
   } else {
     return sentStart + sentPieces.join(', ');
     }
