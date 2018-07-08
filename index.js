@@ -25,7 +25,11 @@ function viewCart() {
   // building sentence fragments w. itemName & itemPrice
   var sentPieces = [];
   for (i = 0; i < l; i++) {
-    sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
+    if (i === l - 1) {
+      sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
+    }
+    
+    //sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
   }
   
   var sentStart = 'In your cart, you have ';
