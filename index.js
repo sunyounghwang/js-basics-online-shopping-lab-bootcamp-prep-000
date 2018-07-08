@@ -26,7 +26,7 @@ function viewCart() {
   var sentPieces = [];
   for (i = 0; i < l; i++) {
     if (i === l - 1) {
-      sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
+      sentPieces.push(`and ${cart[i].itemName} at $${cart[i].itemPrice}.`);
     }
     
     //sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
