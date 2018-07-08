@@ -35,6 +35,8 @@ function viewCart() {
   for (i = 0; i < l; i++) {
     messageItems.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
   }
+  
+  return messageItems;
 }
 
 function total() {
