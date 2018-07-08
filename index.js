@@ -31,7 +31,7 @@ function viewCart() {
   } */
   
   for (i = 0; i < l; i++) {
-    var message = "In your cart, you have ";
+    var messageStart = "In your cart, you have ";
     var newMessage = `${cart[i].itemName} at $${cart[i]itemPrice}`;
   }
 }
