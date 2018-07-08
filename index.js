@@ -22,21 +22,20 @@ function viewCart() {
     return 'Your shopping cart is empty.';
   }
   
-  /* 
-  if (l === 2) {
-  return `In your cart, you have ${} at $${}, and ${} at $${}.}`;
-  } */
-  
   // building sentence fragments w. itemName & itemPrice
-  var sentFragments = [];
+  var sentPieces = [];
   for (i = 0; i < l; i++) {
-    sentFragments.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
+    sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
   }
   
   var sentStart = "In your cart, you have ";
   
   if (l === 1) {
-  return `In your cart, you have ${sentFragments[0]}.}`;
+    return `In your cart, you have ${sentPieces[0]}.}`;
+  }
+
+  if (l === 2) {
+    return `In your cart, you have ${sentPieces[0]}, and ${sentPieces[1]}.}`;
   }
   
   
