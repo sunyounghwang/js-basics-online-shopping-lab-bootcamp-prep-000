@@ -24,12 +24,9 @@ function viewCart() {
   
   var sentPieces = [];
   for (let i = 0; i < l; i++) {
-    console.log("I'm starting a loop!")
     if (l > 1 && i === l - 1) {
-      console.log("I'm starting the if part!")
       sentPieces.push(`and ${cart[i].itemName} at $${cart[i].itemPrice}.`);
     } else {
-      console.log("I'm starting the else part!")
       sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
     }
   }
