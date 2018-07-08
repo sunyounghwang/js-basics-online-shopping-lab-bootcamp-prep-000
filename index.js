@@ -31,12 +31,10 @@ function viewCart() {
       sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
     }
   
-  var sentStart = 'In your cart, you have ';
-  
   if (l === 1) {
-    return `In your cart, you have ${sentPieces[0]}.}`;
+    return `In your cart you have ${sentPieces[0]}.`;
   } else {
-    return sentStart + sentPieces.join(', ');
+    return `In your cart you have ` + sentPieces.join(', ');
     }
   }
 }
