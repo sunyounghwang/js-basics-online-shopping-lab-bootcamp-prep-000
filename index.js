@@ -25,10 +25,8 @@ function viewCart() {
   var sentPieces = [];
   for (let i = 0; i < l; i++) {
     if (l > 1 && i === l - 1) {
-      console.log(l)
       sentPieces.push(`and ${cart[i].itemName} at $${cart[i].itemPrice}.`);
     } else {
-      console.log(l)
       sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
     }
   
