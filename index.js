@@ -32,13 +32,13 @@ function viewCart() {
       console.log("I'm starting the else part!")
       sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
     }
+  }
   
   if (l === 1) {
     return `In your cart, you have ${sentPieces}.`;
   } else {
     return `In your cart, you have ` + sentPieces.join(', ');
     }
-  }
 }
 
 function total() {
