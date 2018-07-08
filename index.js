@@ -24,8 +24,7 @@ function viewCart() {
   
   // building sentence fragments using names & prices
   var sentPieces = [];
-  for (i = 0; i < l; i++) {
-    
+  for (var i = 0; i < l; i++) {
     if (l > 1 && i === l - 1) {
       console.log(i)
       sentPieces.push(`and ${cart[i].itemName} at $${cart[i].itemPrice}.`);
