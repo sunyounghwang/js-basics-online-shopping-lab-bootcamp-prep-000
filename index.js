@@ -22,12 +22,14 @@ function viewCart() {
     return 'Your shopping cart is empty.';
   }
   
-  // building sentence fragments w. itemName & itemPrice
+  // building sentence fragments using names & prices
   var sentPieces = [];
   for (i = 0; i < l; i++) {
     if (l > 1 && i === l - 1) {
+      console.log(i)
       sentPieces.push(`and ${cart[i].itemName} at $${cart[i].itemPrice}.`);
     } else {
+      console.log(i)
       sentPieces.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
     }
   
