@@ -48,10 +48,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  for (let i = 0, l = cart.length; i > l; i++) {
-    console.log('inside loop')
+  for (let i = 0, l = cart.length; i < l; i++) {
     if (cart[i].itemName === item) {
-      console.log('inside if')
       return cart.splice(i, 1);
     }
   }
