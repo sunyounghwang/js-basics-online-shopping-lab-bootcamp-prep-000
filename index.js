@@ -30,13 +30,13 @@ function viewCart() {
   return `In your cart, you have ${} at $${}, and ${} at $${}.}`;
   } */
   
-  var messageStart = "In your cart, you have ";
   var messageItems = [];
   for (i = 0; i < l; i++) {
     messageItems.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
   }
   
-  return messageItems;
+  var messageStart = "In your cart, you have ";
+  
 }
 
 function total() {
