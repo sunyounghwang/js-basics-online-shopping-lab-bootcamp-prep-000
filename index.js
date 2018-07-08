@@ -30,9 +30,9 @@ function viewCart() {
   return `In your cart, you have ${} at $${}, and ${} at $${}.}`;
   } */
   
-  itemInfo = [];
   for (i = 0; i < l; i++) {
-    itemInfo.push(itemInfo.slice(i, i++))
+    var message = "In your cart, you have ";
+    var newMessage = `${cart[i].itemName} at $${cart[i]itemPrice}`;
   }
 }
 
