@@ -35,9 +35,9 @@ function viewCart() {
   
   // building final sentence
   if (l === 1) {
-    return `In your cart you have ${sentPieces}.`;
+    return `In your cart, you have ${sentPieces}.`;
   } else {
-    return `In your cart you have ` + sentPieces.join(', ');
+    return `In your cart, you have ` + sentPieces.join(', ');
     }
   }
 }
