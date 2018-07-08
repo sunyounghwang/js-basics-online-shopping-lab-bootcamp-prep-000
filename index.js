@@ -58,8 +58,8 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  console.log(cardNumber === null);
-  if (cardNumber === null) {
+  console.log(cardNumber == null);
+  if (cardNumber == null) {
     return 'Sorry, we don\'t have a credit card on file for you.';
   } else { 
     var totalCost = total();
